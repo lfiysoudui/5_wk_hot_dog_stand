@@ -4,13 +4,11 @@ using namespace std; //使用library中的標準命名空間
 
 class HotDogStand{
     public:
-        HotDogStand();
-        HotDogStand(string name,int sold = 0);
+        HotDogStand(string name);
+        HotDogStand(string name,int sold);
         void justSold();
         void print();
-        static int allStandSoldAmount(){
-            return assa;
-        }
+        static int allStandSoldAmount();
     private:
         string id;
         int soldnum;
